@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import UseEffect from './UseEffect';
+import UserAuth from './UserAuth';
+import QrCode from './QrCode';
+import UseRef from './UseRef';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <UseEffect />
+    {/* <UseEffect /> */}
+    {/* <UserAuth /> */}
+
+    {/* <QrCode /> */}
+    <UseRef />
   </React.StrictMode>
 );
 
