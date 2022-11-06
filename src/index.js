@@ -6,6 +6,10 @@ import UseEffect from "./UseEffect";
 import UserAuth from "./UserAuth";
 import QrCode from "./QrCode";
 import UseRef from "./UseRef";
+import Portal from "./Portal";
+import MultiTab from "./MultiTab";
+import QrScanner from "./QrScanner";
+import AnotherScanner from "./AnotherScanner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +19,11 @@ root.render(
     {/* <UserAuth /> */}
 
     {/* <QrCode /> */}
-    <UseRef />
+    {/* <Portal /> */}
+    {/* <UseRef /> */}
+    {/* <MultiTab /> */}
+    <QrScanner />
+    {/* <AnotherScanner /> */}
   </React.StrictMode>
 );
 

@@ -20,18 +20,29 @@ import { useState } from "react";
 // }
 
 export default function UseRef() {
-  const username = useRef(null);
-  console.log(username);
-  const onUsernameClick = () => {
-    // current points to the mounted input text element
+    const username = useRef(null);
+    const anotherone = useRef(null);
     console.log(username);
-    console.log(username.current);
-    username.current.focus();
-  };
-  return (
-    <>
-      <input ref={username} type="text" />
-      <button onClick={onUsernameClick}>Focus on input</button>
-    </>
-  );
+    const onUsernameClick = () => {
+        // current points to the mounted input text element
+        console.log(username);
+        console.log(username.current);
+        username.current.focus();
+    };
+
+    const onAnotherClick = () => {
+        console.log(anotherone.current);
+        anotherone.current.classList.add("remoe")
+        console.log(anotherone.current);
+
+    }
+    return (
+        <>
+            <input ref={username} type="text" />
+            <h1 ref={anotherone} >Another Ref</h1>
+
+            <button onClick={onUsernameClick}>Focus on input</button>
+            <button onClick={onAnotherClick}>Another</button>
+        </>
+    );
 }

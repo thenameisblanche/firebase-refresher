@@ -19,3 +19,15 @@ code {
 .Red {
   background: red;
 }
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.active-tabs {
+  background-color: aquamarine;
+}
